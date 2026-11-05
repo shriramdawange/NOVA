@@ -1,0 +1,20 @@
+{
+  "name": "nova-retail-os",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @nova/web",
+    "dev:api": "npm run dev --workspace @nova/api",
+    "build": "npm run build --workspace @nova/web && npm run build --workspace @nova/api",
+    "lint": "npm run lint --workspace @nova/web",
+    "typecheck": "npm run typecheck --workspace @nova/web && npm run typecheck --workspace @nova/api",
+    "test": "node packages/core/scripts/smoke-check.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
