@@ -1,0 +1,3 @@
+# NOVA — Retail & Business Operations OS
+
+TypeScript monorepo foundation. Next.js web app in `apps/web`, Express API in `apps/api`, shared core/database in `packages/core`, plus UI/config workspace boundaries. Two access classes: NOVA Platform Admin and Tenant User. Tenant document vault supports receipts, invoices, vendor bills, purchase/payment proofs, statements, tax documents and other files using private Supabase Storage with RLS. See docs and migrations. Configure Supabase before live financial data; no secrets belong in Git.
